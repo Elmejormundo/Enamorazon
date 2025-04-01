@@ -4,8 +4,8 @@
 <title>Inicio</title>
     <link rel="stylesheet" href="Inicio.css">
   </head>
-  <body>
-    <p class="content-box">
+ <body onclick="PlayAudio()">
+<p class="content-box">
 <header id="site-header" style="width: 100%;">
 <div class="hr"></div>
 <center><img src="Logo_sin_fondo.png"><center>Enamorazón
@@ -13,7 +13,8 @@
 </div>
 </header>
 </p>
-    <center>
+
+<center>
 <br>
 <p>Siempre hay una persona idónea para TI y TU vida
 <br>
@@ -27,15 +28,26 @@ Accede, encuentra y conoce a esa persona tan especial
 </a>  
 </div>
 </div>
-      <footer>
+
+<footer>
 <br><br>
 Escríbeme por correo:<br>
+    email@email.com
 <br><br>
 "Sin trucos especiales" 
+
 </center>
 </footer> 
  <button class ="button"><a href="País.html">Ir a País</button></a><br><br>
 
+<audio id="musica1" loop>
+<source src="audio/canción.mp3" type="audio/mpeg">
+</audio>
+<script>
+function.PlayAudio() {
+document.getElementById("musica1").play();
+}
+</script>
+</body>
 
-  </body>
 </html>
